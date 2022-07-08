@@ -55,12 +55,15 @@ For other comparisons with NPM and YARN see the information found here: https://
 ## Differences in node_modules folder structure
 
 NPM node_modules folder:
+
 ![npm](./images/npm-project.png)
 
 YARN node_modules folder:
+
 ![yarn](./images/yarn-project.png)
 
 PNPM node_modules folder:
+
 ![pnpm](./images/pnpm-project.png)
 
 ## License
