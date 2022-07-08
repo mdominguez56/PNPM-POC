@@ -1,178 +1,68 @@
-_*Instalacion de Chakra UI en NPM:*_
+![Logo](https://pnpm.io/fr/img/pnpm-no-name-with-frame.svg)
 
-matiasdominguezalonso@MacBook-Air-de-Matias npm-project % time npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
+# PNPM POC
 
-added 212 packages, and audited 271 packages in 23s
+The purpose of this repository is to investigate the advantages and disadvantages of using PNPM as a package manager.
 
-18 packages are looking for funding
-run `npm fund` for details
+## Why use pnpm?
 
-found 0 vulnerabilities
-npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion _5.15s user 2.02s system 31% cpu 22.981 total_
+- Saving disk space
+- Boosting installation speed
+- More security
+- Offline mode
 
-_*Instalacion de Chakra UI en PNPM:*_
+You can read more about the motivations to use pnpm here:
 
-matiasdominguezalonso@MacBook-Air-de-Matias pnpm-project % time pnpm add @chakra-ui/react @emotion/react @emotion/styled framer-motion
-Packages: +156
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Progress: resolved 249, reused 120, downloaded 93, added 156, done
+- https://pnpm.io/motivation
+- https://medium.com/pnpm/why-should-we-use-pnpm-75ca4bfe7d93#:~:text=pnpm%20is%20not%20only%20faster,them%20from%20the%20global%20store.
 
-dependencies:
+## How does it work?
 
-- @chakra-ui/react 2.2.1
-- @emotion/react 11.9.3
-- @emotion/styled 11.9.3
-- framer-motion 6.4.1
+One of the main features of PNPM is Creating a non-flat node_modules directory.
 
-WARN  Issues with peer dependencies found
-.
-├─┬ @chakra-ui/react
-│ ├── ✕ missing peer react@>=18
-│ ├── ✕ missing peer react-dom@>=18
-│ ├─┬ @chakra-ui/accordion
-│ │ ├── ✕ missing peer react@>=18
-│ │ ├─┬ @chakra-ui/descendant
-│ │ │ ├── ✕ missing peer react@>=18
-│ │ │ └─┬ @chakra-ui/react-utils
-│ │ │ └── ✕ missing peer react@>=18
-│ │ ├─┬ @chakra-ui/hooks
-│ │ │ └── ✕ missing peer react@>=18
-│ │ ├─┬ @chakra-ui/icon
-│ │ │ └── ✕ missing peer react@>=18
-│ │ └─┬ @chakra-ui/transition
-│ │ └── ✕ missing peer react@>=18
-│ ├─┬ @chakra-ui/alert
-│ │ ├── ✕ missing peer react@>=18
-│ │ └─┬ @chakra-ui/spinner
-│ │ ├── ✕ missing peer react@>=18
-│ │ └─┬ @chakra-ui/visually-hidden
-│ │ └── ✕ missing peer react@>=18
-│ ├─┬ @chakra-ui/avatar
-│ │ ├── ✕ missing peer react@>=18
-│ │ └─┬ @chakra-ui/image
-│ │ └── ✕ missing peer react@>=18
-│ ├─┬ @chakra-ui/breadcrumb
-│ │ └── ✕ missing peer react@>=18
-│ ├─┬ @chakra-ui/button
-│ │ └── ✕ missing peer react@>=18
-│ ├─┬ @chakra-ui/checkbox
-│ │ ├── ✕ missing peer react@>=18
-│ │ └─┬ @chakra-ui/form-control
-│ │ └── ✕ missing peer react@>=18
-│ ├─┬ @chakra-ui/close-button
-│ │ └── ✕ missing peer react@>=18
-│ ├─┬ @chakra-ui/control-box
-│ │ └── ✕ missing peer react@>=18
-│ ├─┬ @chakra-ui/counter
-│ │ └── ✕ missing peer react@>=18
-│ ├─┬ @chakra-ui/css-reset
-│ │ └── ✕ missing peer react@>=18
-│ ├─┬ @chakra-ui/editable
-│ │ └── ✕ missing peer react@>=18
-│ ├─┬ @chakra-ui/input
-│ │ └── ✕ missing peer react@>=18
-│ ├─┬ @chakra-ui/layout
-│ │ └── ✕ missing peer react@>=18
-│ ├─┬ @chakra-ui/live-region
-│ │ └── ✕ missing peer react@>=18
-│ ├─┬ @chakra-ui/media-query
-│ │ ├── ✕ missing peer react@>=18
-│ │ └─┬ @chakra-ui/react-env
-│ │ └── ✕ missing peer react@>=18
-│ ├─┬ @chakra-ui/menu
-│ │ ├── ✕ missing peer react@>=18
-│ │ ├─┬ @chakra-ui/clickable
-│ │ │ └── ✕ missing peer react@>=18
-│ │ └─┬ @chakra-ui/popper
-│ │ └── ✕ missing peer react@>=18
-│ ├─┬ @chakra-ui/modal
-│ │ ├── ✕ missing peer react@>=18
-│ │ ├── ✕ missing peer react-dom@>=18
-│ │ ├─┬ @chakra-ui/focus-lock
-│ │ │ ├── ✕ missing peer react@>=18
-│ │ │ └─┬ react-focus-lock
-│ │ │ ├── ✕ missing peer react@"^16.8.0 || ^17.0.0 || ^18.0.0"
-│ │ │ ├─┬ react-clientside-effect
-│ │ │ │ └── ✕ missing peer react@"^15.3.0 || ^16.0.0 || ^17.0.0 || ^18.0.0"
-│ │ │ ├─┬ use-callback-ref
-│ │ │ │ └── ✕ missing peer react@"^16.8.0 || ^17.0.0 || ^18.0.0"
-│ │ │ └─┬ use-sidecar
-│ │ │ └── ✕ missing peer react@"^16.8.0 || ^17.0.0 || ^18.0.0"
-│ │ ├─┬ @chakra-ui/portal
-│ │ │ ├── ✕ missing peer react@>=18
-│ │ │ └── ✕ missing peer react-dom@>=18
-│ │ └─┬ react-remove-scroll
-│ │ ├── ✕ missing peer react@"^16.8.0 || ^17.0.0 || ^18.0.0"
-│ │ └─┬ react-remove-scroll-bar
-│ │ ├── ✕ missing peer react@"^16.8.0 || ^17.0.0 || ^18.0.0"
-│ │ └─┬ react-style-singleton
-│ │ └── ✕ missing peer react@"^16.8.0 || ^17.0.0 || ^18.0.0"
-│ ├─┬ @chakra-ui/number-input
-│ │ └── ✕ missing peer react@>=18
-│ ├─┬ @chakra-ui/pin-input
-│ │ └── ✕ missing peer react@>=18
-│ ├─┬ @chakra-ui/popover
-│ │ └── ✕ missing peer react@>=18
-│ ├─┬ @chakra-ui/progress
-│ │ └── ✕ missing peer react@>=18
-│ ├─┬ @chakra-ui/provider
-│ │ ├── ✕ missing peer react@>=18
-│ │ ├── ✕ missing peer react-dom@>=18
-│ │ └─┬ @chakra-ui/system
-│ │ ├── ✕ missing peer react@>=18
-│ │ └─┬ @chakra-ui/color-mode
-│ │ └── ✕ missing peer react@>=18
-│ ├─┬ @chakra-ui/radio
-│ │ └── ✕ missing peer react@>=18
-│ ├─┬ @chakra-ui/select
-│ │ └── ✕ missing peer react@>=18
-│ ├─┬ @chakra-ui/skeleton
-│ │ ├── ✕ missing peer react@>=18
-│ │ └─┬ @chakra-ui/media-query
-│ │ └── ✕ missing peer react@>=18
-│ ├─┬ @chakra-ui/slider
-│ │ └── ✕ missing peer react@>=18
-│ ├─┬ @chakra-ui/stat
-│ │ └── ✕ missing peer react@>=18
-│ ├─┬ @chakra-ui/switch
-│ │ └── ✕ missing peer react@>=18
-│ ├─┬ @chakra-ui/table
-│ │ └── ✕ missing peer react@>=18
-│ ├─┬ @chakra-ui/tabs
-│ │ └── ✕ missing peer react@>=18
-│ ├─┬ @chakra-ui/tag
-│ │ └── ✕ missing peer react@>=18
-│ ├─┬ @chakra-ui/textarea
-│ │ └── ✕ missing peer react@>=18
-│ ├─┬ @chakra-ui/toast
-│ │ ├── ✕ missing peer react@>=18
-│ │ ├── ✕ missing peer react-dom@>=18
-│ │ ├─┬ @chakra-ui/alert
-│ │ │ ├── ✕ missing peer react@>=18
-│ │ │ ├─┬ @chakra-ui/icon
-│ │ │ │ └── ✕ missing peer react@>=18
-│ │ │ └─┬ @chakra-ui/spinner
-│ │ │ ├── ✕ missing peer react@>=18
-│ │ │ └─┬ @chakra-ui/visually-hidden
-│ │ │ └── ✕ missing peer react@>=18
-│ │ └─┬ @chakra-ui/close-button
-│ │ └── ✕ missing peer react@>=18
-│ └─┬ @chakra-ui/tooltip
-│ ├── ✕ missing peer react@>=18
-│ └── ✕ missing peer react-dom@>=18
-├─┬ @emotion/react
-│ ├── ✕ missing peer react@>=16.8.0
-│ ├── ✕ missing peer @babel/core@^7.0.0
-│ └─┬ @emotion/babel-plugin
-│ ├── ✕ missing peer @babel/core@^7.0.0
-│ └─┬ @babel/plugin-syntax-jsx
-│ └── ✕ missing peer @babel/core@^7.0.0-0
-├─┬ @emotion/styled
-│ ├── ✕ missing peer react@>=16.8.0
-│ └── ✕ missing peer @babel/core@^7.0.0
-└─┬ framer-motion
-├── ✕ missing peer react@">=16.8 || ^17.0.0 || ^18.0.0"
-└── ✕ missing peer react-dom@">=16.8 || ^17.0.0 || ^18.0.0"
-Peer dependencies that should be installed:
-@babel/core@">=7.0.0 <8.0.0" react-dom@>=18.0.0 react@">=18.0.0 <19.0.0"  
-pnpm add @chakra-ui/react @emotion/react @emotion/styled framer-motion _3.97s user 3.10s system 64% cpu 10.896 total_
+![non-flat](https://d33wubrfki0l68.cloudfront.net/64b2f62af3b1c3dc4314df0ec517d9661d03b934/aca71/assets/images/node-modules-structure-8ab301ddaed3b7530858b233f5b3be57.jpg)
+
+When installing dependencies with npm or Yarn Classic, all packages are hoisted to the root of the modules directory. As a result, source code has access to dependencies that are not added as dependencies to the project.
+
+By default, pnpm uses symlinks to add only the direct dependencies of the project into the root of the modules directory.
+
+## Installation
+
+Install pnmpm with npm
+
+```bash
+  npm install -g pnpm
+```
+
+For more installation instructions you can read the installation guide found at: : https://pnpm.io/es/installation
+
+## Installation times
+
+Time it takes to install Chakra-UI:
+
+- NPM: 5.15s user 2.02s system 31% cpu 22.981 total
+- YARN: 5.04s user 3.17s system 22% cpu 37.268 total
+- PNPM: 3.97s user 3.10s system 64% cpu 10.896 total
+
+Time it takes to install Express:
+
+- NPM: 0.59s user 0.10s system 34% cpu 2.003 total
+- YARN: 1.36s user 0.51s system 33% cpu 5.544 total
+- PNPM: 0.74s user 0.19s system 39% cpu 2.370 total
+
+For other comparisons with NPM and YARN see the information found here: https://pnpm.io/feature-comparison
+
+## Differences in node_modules folder structure
+
+NPM node_modules folder:
+![npm](./images/npm-project.png)
+
+YARN node_modules folder:
+![yarn](./images/yarn-project.png)
+
+PNPM node_modules folder:
+![pnpm](./images/pnpm-project.png)
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
