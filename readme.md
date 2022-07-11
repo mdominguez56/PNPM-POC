@@ -4,6 +4,8 @@
 
 The purpose of this repository is to investigate the advantages and disadvantages of using PNPM as a package manager.
 
+All documentation written below is based on existing documentation on _https://pnpm.io/_ and other websites.
+
 ## Why use pnpm?
 
 - Saving disk space
@@ -13,8 +15,8 @@ The purpose of this repository is to investigate the advantages and disadvantage
 
 You can read more about the motivations to use pnpm here:
 
-- https://pnpm.io/motivation
-- https://medium.com/pnpm/why-should-we-use-pnpm-75ca4bfe7d93#:~:text=pnpm%20is%20not%20only%20faster,them%20from%20the%20global%20store.
+- _https://pnpm.io/motivation_
+- _https://medium.com/pnpm/why-should-we-use-pnpm-75ca4bfe7d93#:~:text=pnpm%20is%20not%20only%20faster,them%20from%20the%20global%20store_
 
 ## How does it work?
 
@@ -34,9 +36,9 @@ Install pnmpm with npm
   npm install -g pnpm
 ```
 
-For more installation instructions you can read the installation guide found at: : https://pnpm.io/es/installation
+For more installation instructions you can read the installation guide found at: : _https://pnpm.io/es/installation_
 
-## Installation times
+## Installation times / Benchmarks
 
 Time it takes to install Chakra-UI:
 
@@ -50,7 +52,9 @@ Time it takes to install Express:
 - YARN: 1.36s user 0.51s system 33% cpu 5.544 total
 - PNPM: 0.74s user 0.19s system 39% cpu 2.370 total
 
-For other comparisons with NPM and YARN see the information found here: https://pnpm.io/feature-comparison
+For more information about bencharks between pnpm, npm and yarn you can visit the following link: _https://pnpm.io/benchmarks_
+
+For other comparisons with NPM and YARN see the information found here: _https://pnpm.io/feature-comparison_
 
 ## Differences in node_modules folder structure
 
@@ -65,6 +69,22 @@ YARN node_modules folder:
 PNPM node_modules folder:
 
 ![pnpm](./images/pnpm-project.png)
+
+## Other features
+
+## Filtering
+
+Filtering allows you to restrict commands to specific subsets of packages.
+
+pnpm supports a rich selector syntax for picking packages by name or by relation.
+
+Selectors may be specified via the --filter (or -F) flag:
+
+```bash
+  pnpm --filter <package_selector> <command>
+```
+
+To learn how to use the filter function, see the following link: _https://pnpm.io/filtering_
 
 ## License
 

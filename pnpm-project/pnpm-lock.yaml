@@ -6,6 +6,7 @@ specifiers:
   '@emotion/styled': ^11.9.3
   express: ^4.18.1
   framer-motion: ^6.4.1
+  mobx: ^6.6.1
 
 dependencies:
   '@chakra-ui/react': 2.2.1_bnestrdohwp57qn4wobcp7t32i
@@ -13,6 +14,7 @@ dependencies:
   '@emotion/styled': 11.9.3_@emotion+react@11.9.3
   express: 4.18.1
   framer-motion: 6.4.1
+  mobx: 6.6.1
 
 packages:
 
@@ -1460,6 +1462,10 @@ packages:
     resolution: {integrity: sha512-x0Vn8spI+wuJ1O6S7gnbaQg8Pxh4NNHb7KSINmEWKiPE4RKOplvijn+NkmYmmRgP68mc70j2EbeTFRsrswaQeg==}
     engines: {node: '>=4'}
     hasBin: true
+    dev: false
+
+  /mobx/6.6.1:
+    resolution: {integrity: sha512-7su3UZv5JF+ohLr2opabjbUAERfXstMY+wiBtey8yNAPoB8H187RaQXuhFjNkH8aE4iHbDWnhDFZw0+5ic4nGQ==}
     dev: false
 
   /ms/2.0.0:
