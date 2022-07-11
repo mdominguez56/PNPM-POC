@@ -86,6 +86,18 @@ Selectors may be specified via the --filter (or -F) flag:
 
 To learn how to use the filter function, see the following link: _https://pnpm.io/filtering_
 
+## Workspaces
+
+pnpm has built-in support for monorepositories (AKA multi-package repositories, multi-project repositories, or monolithic repositories). You can create a workspace to unite multiple projects inside a single repository.
+
+A workspace must have a pnpm-workspace.yaml file in its root. A workspace also may have an .npmrc in its root.
+
+Here are a few of the most popular open source projects that use the workspace feature of pnpm:
+
+![workspaces](./images/pnpm-workspaces-examples.png)
+
+To learn more about the implementation of workspaces, you can see the following link: https://pnpm.io/workspaces
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
