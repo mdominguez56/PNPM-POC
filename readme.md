@@ -96,7 +96,7 @@ Here are a few of the most popular open source projects that use the workspace f
 
 ![workspaces](./images/pnpm-workspaces-examples.png)
 
-To learn more about the implementation of workspaces, you can see the following link: https://pnpm.io/workspaces
+To learn more about the implementation of workspaces, you can see the following link: _https://pnpm.io/workspaces_
 
 ## License
 
